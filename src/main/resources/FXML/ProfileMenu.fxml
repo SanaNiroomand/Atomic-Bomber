@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500" prefWidth="1000" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfileMenuController">
+
+    
+
+    <stylesheets>
+        <URL value="@../CSS/styles.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="newUsername" layoutX="43.0" layoutY="231.0" prefHeight="38.0" prefWidth="436.0" promptText="new username" />
+      <TextField fx:id="newPassword" layoutX="43.0" layoutY="297.0" prefHeight="38.0" prefWidth="436.0" promptText="new password" />
+      <Button layoutX="500.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#changeUsername" prefHeight="32.0" prefWidth="133.0" text="change username" />
+      <Button layoutX="500.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#changePassword" prefHeight="32.0" prefWidth="133.0" text="change password" />
+      <Button layoutX="195.0" layoutY="374.0" mnemonicParsing="false" onMouseClicked="#deleteAccount" prefHeight="38.0" prefWidth="133.0" styleClass="deleteButton" text="Delete Account" />
+      <Label fx:id="label" layoutX="181.0" layoutY="132.0" text="username" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="avatar" fitHeight="73.0" fitWidth="80.0" layoutX="76.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="50.0" layoutY="374.0" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="38.0" prefWidth="133.0" styleClass="logoutButton" text="Logout" />
+      <Button layoutX="340.0" layoutY="374.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="133.0" text="Avatar Menu" onMouseClicked="#launchAvatarMenu"/>
+      <Button layoutX="881.0" layoutY="28.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="88.0" text="back" onMouseClicked="#back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

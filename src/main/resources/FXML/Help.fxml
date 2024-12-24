@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500" prefWidth="500" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PauseMenuController">
+    <stylesheets>
+        <URL value="@../CSS/styles.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="100.0" layoutY="164.0" text="Space : Normal Bomb" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="100.0" layoutY="132.0" text="Arrow Keys (or A-S-D-W) : Plane Movement" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Button layoutX="388.0" layoutY="26.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="88.0" text="back" onMouseClicked="#helpBack">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="100.0" layoutY="194.0" text="R : Radioactive Bomb" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="222.0" text="C : Cluster Bomb" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+.root {
+    -fx-background-color: #405bdf;
+}
+
+Button {
+    -fx-text-fill: #ffff;
+    -fx-background-color: #7935a3;
+    -fx-background-radius: 100;
+}
+
+
+TextField, PasswordField {
+    -fx-text-fill: #000000;
+    -fx-background-radius: 100;
+}
+
+.deleteButton {
+    -fx-background-color: #d33c3c;
+}
+
+.logoutButton {
+    -fx-background-color: #a55939;
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500" prefWidth="1000" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameSettingsController">
+
+
+
+    <stylesheets>
+        <URL value="@../CSS/styles.css" />
+    </stylesheets>
+   <children>
+      <RadioButton layoutX="51.0" layoutY="86.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Easy" textFill="WHITE" fx:id="easy" onAction="#changeGameLevel">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gameLevel" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="138.0" layoutY="89.0" mnemonicParsing="false" text="Normal" textFill="WHITE" toggleGroup="$gameLevel" fx:id="normal" onAction="#changeGameLevel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="250.0" layoutY="89.0" mnemonicParsing="false" text="Hard" textFill="WHITE" toggleGroup="$gameLevel" fx:id="hard" onAction="#changeGameLevel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="51.0" layoutY="156.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Mute" onMouseClicked="#mute">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <RadioButton layoutX="51.0" layoutY="232.0" mnemonicParsing="false" text="Arrow Keys" textFill="WHITE" fx:id="arrow" onAction="#changeControlKeys">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="control" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="200.0" layoutY="232.0" mnemonicParsing="false" text="A-S-D-W" textFill="WHITE" toggleGroup="$control" fx:id="asdw" onAction="#changeControlKeys">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+
+       <Button layoutX="881.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="32.0" prefWidth="88.0" text="back">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Button>
+   </children>
+</AnchorPane>
