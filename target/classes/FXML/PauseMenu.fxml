@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500" prefWidth="500" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PauseMenuController">
+
+
+
+    <stylesheets>
+        <URL value="@../CSS/styles.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="116.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#exitGame" prefHeight="39.0" prefWidth="269.0" text="Exit Game">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="116.0" layoutY="241.0" mnemonicParsing="false" onMouseClicked="#showHelp" prefHeight="39.0" prefWidth="269.0" text="Help">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <RadioButton fx:id="mute" layoutX="79.0" layoutY="317.0" mnemonicParsing="false" onAction="#changeMusic" text="mute" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="music" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="musicOne" layoutX="143.0" layoutY="317.0" mnemonicParsing="false" onAction="#changeMusic" text="music one" textFill="WHITE" toggleGroup="$music" />
+      <RadioButton fx:id="musicTwo" layoutX="239.0" layoutY="317.0" mnemonicParsing="false" onAction="#changeMusic" text="music two" textFill="WHITE" toggleGroup="$music" />
+      <RadioButton fx:id="musicThree" layoutX="332.0" layoutY="317.0" mnemonicParsing="false" onAction="#changeMusic" text="music three" textFill="WHITE" toggleGroup="$music" />
+   </children>
+</AnchorPane>

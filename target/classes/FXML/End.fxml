@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500" prefWidth="500" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.End" fx:id="rootPane">
+
+    <stylesheets>
+        <URL value="@../CSS/styles.css" />
+    </stylesheets>
+   <children>
+       <Button layoutX="388.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="32.0" prefWidth="88.0" text="back">
+           <font>
+               <Font size="15.0" />
+           </font>
+       </Button>
+   </children>
+
+</AnchorPane>
